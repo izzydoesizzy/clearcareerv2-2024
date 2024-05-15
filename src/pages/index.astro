@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+// import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -25,10 +25,10 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Board the Rocketship',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:rocket',
       },
       { text: 'Learn more', href: '#features' },
     ]}
@@ -39,18 +39,21 @@ const metadata = {
 </Fragment>
 
 <Fragment slot="subtitle">
-    <span class="hidden sm:inline">
-        <span class="font-semibold">ClearCareer is a vibrant job search community </span> where your career growth is supported every step of the way. Feel empowered, stay motivated, and achieve your career goals with proven tools, templates, strategies and community accountability.
-    </span>
-    <span class="block mb-1 sm:hidden font-bold text-blue-600">
-        Transform your job search with our support!
-    </span>
+  <span class="hidden sm:inline">
+      <span class="font-semibold">ClearCareer is a vibrant community of job seekers</span> offering support, accountability, weekly coaching calls, and more to accelerate your job search. Turn relentless rejections into triumphs with ClearCareer!
+
+  </span>
+  <span class="block mb-1 sm:hidden font-bold text-blue-600">
+    Turn relentless rejections into triumphs with ClearCareer!
+
+  </span>
 </Fragment>
+
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <!-- <Note /> -->
 
 <!-- Features Widget *************** -->
 
@@ -249,79 +252,65 @@ const metadata = {
 <!-- Features2 Widget ************** -->
 
 <Features2
-    title="Most Used AI Prompts & Templates"
+    title="Top AI Prompts & Templates"
     subtitle="Essential tools for streamlining your job search and enhancing productivity"
-    tagline="AI Tools"
+    tagline="RESOURCES"
     items={[
       {
         title: 'Quantified Achievements',
-        description: 'Quantify your achievements with 300+ precisely-engineered AI prompts.',
+        description: 'Jog your memory by generating a list of achievements based on your job title and industry, boosting resume impact.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Job Seeker Emails',
-        description: 'Comprehensive email templates tailored for job seekers.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Tech Events Calendar',
-        description: 'Stay updated with the latest tech events in your field.',
-        icon: 'flat-color-icons:calendar',
-      },
-      {
-        title: 'Networking Ideas',
-        description: '18 ways to add value when networking.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Email to Hiring Manager',
-        description: 'AI prompt to write an effective email to the hiring manager.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Prospective Companies',
-        description: 'Create a list of target companies with this AI prompt.',
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Thank You Email',
-        description: 'AI prompt for writing a post-interview thank you email.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: '5-Second Research',
-        description: 'Quick company research with this AI prompt.',
-        icon: 'flat-color-icons:database',
-      },
-      {
-        title: 'LinkedIn Summary',
-        description: 'AI prompt to write your LinkedIn "About Me" section.',
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'LinkedIn Headline',
-        description: 'Create discoverable LinkedIn headlines with AI.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Resume Achievements',
-        description: 'Quantify your resume achievements with AI.',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Salary Research',
-        description: 'Conduct rapid salary research with this AI tool.',
+        title: 'Instant Salary Research',
+        description: 'Instantly gather detailed salary data by location and company size, helping you negotiate better.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Interview Questions',
-        description: 'Generate custom interview questions with AI.',
+        title: 'Tech Events Calendar',
+        description: 'Find and keep track of all upcoming events in your field, ensuring you never miss networking opportunities.',
+        icon: 'flat-color-icons:calendar',
+      },
+      {
+        title: 'Networking Scripts',
+        description: '18 ways to add value when networking. Effective networking has led to 200+ connections for our members.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Email Templates Galore',
+        description: 'Comprehensive email templates for job seekers, including hiring manager emails and silver-bullet thank you emails.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Employer Objections',
-        description: 'Identify and counter potential employer objections with AI.',
-        icon: 'flat-color-icons:cancel',
+        title: 'Target Company List',
+        description: 'Quickly generate a list of companies that align with your career goals, saving time on research.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Instant Company Research',
+        description: 'Get a lightning-fast summary of key company details, saving time on research and preparation.',
+        icon: 'flat-color-icons:database',
+      },
+      {
+        title: 'LinkedIn Profile Optimization',
+        description: 'Optimize your LinkedIn profile with AI-generated headlines and a compelling “About Me” summary to increase profile visits and job opportunities.',
+        icon: 'flat-color-icons:gallery',
+      },
+ 
+      {
+        title: 'Custom Interview Questions',
+        description: 'Get a list of industry-specific interview questions, helping you win your next interview confidently.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Counter Objections',
+        description: 'Pinpoint potential employer concerns and develop strategies to counter them, improving your candidacy.',
+        icon: 'flat-color-icons:high-priority',
+      },
+      {
+        title: 'Must-Have Tools',
+        description: 'A curated list of the top job search tools for job seekers in 2024. Equip yourself with the best tools for job hunting success.',
+        icon: 'flat-color-icons:support',
       },
     ]}
   >
@@ -387,8 +376,8 @@ const metadata = {
 stats={[
   { title: 'Avg. Salary Gain', amount: '$10K' },
   { title: 'Top Salary Gain', amount: '$30K' },
-  { title: 'Members & Alum', amount: '100+' },
-  { title: 'Avg. Time to Interview', amount: '3 weeks' },
+  { title: 'Alum', amount: '100+' },
+  // { title: 'Avg. Time to Interview', amount: '3 weeks' },
 ]}
 />
   <!-- CallToAction Widget *********** -->
@@ -397,20 +386,18 @@ stats={[
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Board the Rocketship',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:rocket',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+        Join the ClearCareer Community Today<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+        Shatter the cycle of rejections. Reclaim your self-worth with ClearCareer! <br class="hidden md:inline" />Don't wait any longer to transform your career!
     </Fragment>
-  </CallToAction>
 </Layout>
