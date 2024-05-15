@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import Prices from '~/components/widgets/Pricing.astro';
 import Hero from '~/components/widgets/Hero.astro';
 // import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -260,6 +260,71 @@ const metadata = {
 
   <!-- FAQs Widget ******************* -->
 
+
+  <Prices
+    title="Community Membership Options"
+    subtitle="Choose the plan that works for you"
+    prices={[
+      {
+        title: 'Monthly Membership',
+        subtitle: 'Optimal choice for ongoing support',
+        price: 49,
+        period: 'per month',
+        items: [
+          {
+            description: 'Weekly group coaching & training',
+          },
+          {
+            description: 'Community support & accountability',
+          },
+          {
+            description: 'Templates, scripts, and resources',
+          },
+          
+          {
+            description: 'Email templates and tools',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
+        },
+      },
+      {
+        title: 'Lifetime Membership',
+        subtitle: 'Best value for long-term commitment',
+        price: 249,
+        period: 'one-time payment',
+        items: [
+          
+          {
+            description: 'Weekly group coaching & training',
+          },
+          {
+            description: 'Community support & accountability',
+          },
+          {
+            description: 'Templates, scripts, and resources',
+          },
+          
+          {
+            description: 'Email templates and tools',
+          },
+          {
+            description: 'Lifetime access to all features',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Best Value',
+      },
+    ]}
+/>
   <FAQs
     title="Frequently Asked Questions"
     subtitle="Explore these common questions to learn more about how ClearCareer Group Coaching can transform your job search journey."
