@@ -7,7 +7,7 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
@@ -34,104 +34,102 @@ const metadata = {
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
-    </Fragment>
+  <Fragment slot="title">
+    Imagine Your Job Search With <span class="text-accent dark:text-white highlight">Community & Support</span>
+</Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
-    </Fragment>
+<Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+        <span class="font-semibold">ClearCareer is a vibrant job search community </span> where your career growth is supported every step of the way. Feel empowered, stay motivated, and achieve your career goals with proven tools, templates, strategies and community accountability.
+    </span>
+    <span class="block mb-1 sm:hidden font-bold text-blue-600">
+        Transform your job search with our support!
+    </span>
+</Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
   <Note />
 
-  <!-- Features Widget *************** -->
+<!-- Features Widget *************** -->
 
-  <Features
+<Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="What You Get with ClearCareer"
+    subtitle="Join our comprehensive and supportive community to transform your job search journey and achieve your career goals."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Expert Guidance',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Personalized advice to refine strategies, bounce ideas, and get feedback, easing decision-making.',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Supportive Community',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Engage with like-minded professionals who share your ambitions and support your journey.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Best Practices',
+        title: 'Flexible Approach',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Concrete steps and the flexibility to progress at your own pace for a balanced experience.',
+        icon: 'tabler:adjustments-horizontal',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Practical Tools',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Leverage cutting-edge AI tools and practical insights to optimize your job search.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Real Results',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Experience significant career advancements and tangible outcomes from actionable guidance.',
+        icon: 'tabler:award',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Continuous Learning',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Stay updated on the latest trends and best practices to remain competitive in the job market.',
+        icon: 'tabler:book',
       },
     ]}
-  />
+/>
 
-  <!-- Content Widget **************** -->
+<!-- Content Widget **************** -->
 
-  <Content
+<Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Inside ClearCareer"
+    title="ClearCareer’s Blueprint: Transforming Job Searches!"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Personalized Coaching',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Receive tailored advice and strategies that help you navigate your job search with confidence.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Supportive Community',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Engage with a network of professionals who share your ambitions and provide mutual support.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Proven Techniques',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Implement effective job search strategies that have helped countless members achieve their career goals.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      alt: 'Community Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      Gain a competitive advantage by incorporating industry-leading job search practices.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,31 +143,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Customizable Career Plans',
+        description: `Tailor your job search plan to match your unique career goals and life circumstances, ensuring a personalized approach.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Diverse Learning Materials',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Access a variety of resources, from video tutorials to practical guides, to enhance your job search skills.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Responsive Support',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "Get timely support and advice from our community and coaches, ensuring you stay on track and motivated.",
       },
       {
-        title: 'Integration of media',
+        title: 'Effective Networking',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Leverage our community to build meaningful professional connections that can lead to job opportunities.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      alt: 'Career Planning Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Ensure your job search truly represents you.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,28 +181,28 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Enhanced Job Search',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Captivate employers with standout applications, intuitive strategies, and personalized coaching, ensuring longer consideration.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Continuous Improvement',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Keep your job search strategies aligned with the latest trends and best practices through regular updates and coaching.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Efficiency and Effectiveness',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Optimize your job search process and achieve results faster with ClearCareer’s proven methodologies.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Community Support',
+        description: `Join the ClearCareer community for insights, resources, and assistance, ensuring you’re never alone in your job search journey.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      alt: 'Growth Image',
     }}
   >
     <Fragment slot="content">Designed to foster growth and success.</Fragment>
@@ -214,31 +212,31 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
+<!-- Steps Widget ****************** -->
 
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+<Steps
+    title="Transform Your Job Search with ClearCareer"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Engage in Weekly Group Calls</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Actively participate in our weekly group Q&A calls. Break through roadblocks, ask questions, and get real-time feedback to refine your job search strategy.",
+        icon: 'tabler:video',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Step 2: <span class="font-medium">Work Smarter with Tools, Templates & AI</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Use the latest productivity tools, and 500+ hours of precisely-engineered AI prompts, and proven templates to save 10+ hours a week in your job search.",
+        icon: 'tabler:tool',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Set Weekly Goals and Stay Accountable</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          "Set career goals and leverage our community for accountability. Track progress and stay motivated with support and encouragement from fellow members.",
+        icon: 'tabler:target',
       },
       {
-        title: 'Ready!',
+        title: 'Land That Interview!',
         icon: 'tabler:check',
       },
     ]}
@@ -248,62 +246,82 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
+<!-- Features2 Widget ************** -->
 
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+<Features2
+    title="Most Used AI Prompts & Templates"
+    subtitle="Essential tools for streamlining your job search and enhancing productivity"
+    tagline="AI Tools"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'Quantified Achievements',
+        description: 'Quantify your achievements with 300+ precisely-engineered AI prompts.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: 'Job Seeker Emails',
+        description: 'Comprehensive email templates tailored for job seekers.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'Tech Events Calendar',
+        description: 'Stay updated with the latest tech events in your field.',
+        icon: 'flat-color-icons:calendar',
+      },
+      {
+        title: 'Networking Ideas',
+        description: '18 ways to add value when networking.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Email to Hiring Manager',
+        description: 'AI prompt to write an effective email to the hiring manager.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Prospective Companies',
+        description: 'Create a list of target companies with this AI prompt.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Thank You Email',
+        description: 'AI prompt for writing a post-interview thank you email.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: '5-Second Research',
+        description: 'Quick company research with this AI prompt.',
         icon: 'flat-color-icons:database',
+      },
+      {
+        title: 'LinkedIn Summary',
+        description: 'AI prompt to write your LinkedIn "About Me" section.',
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'LinkedIn Headline',
+        description: 'Create discoverable LinkedIn headlines with AI.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Resume Achievements',
+        description: 'Quantify your resume achievements with AI.',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Salary Research',
+        description: 'Conduct rapid salary research with this AI tool.',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Interview Questions',
+        description: 'Generate custom interview questions with AI.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Employer Objections',
+        description: 'Identify and counter potential employer objections with AI.',
+        icon: 'flat-color-icons:cancel',
       },
     ]}
   >
@@ -314,66 +332,65 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <!-- <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Explore these common questions to learn more about how ClearCareer Group Coaching can transform your job search journey."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What is ClearCareer Group Coaching?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'ClearCareer Group Coaching is a supportive and strategic community designed to help job seekers elevate their careers through personalized coaching, practical tools, and a network of like-minded professionals.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'How much does the program cost?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'The program costs $49 per month, which includes access to all online content, weekly group calls, community support, referrals, networking opportunities, and accountability features.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What happens in the weekly group calls?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Weekly 1-hour sessions cover resume building, interview prep, salary negotiation, and networking strategies. These sessions also provide a platform for members to share their experiences, ask questions, and receive feedback.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'How does the online community work?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'The online community is a private, supportive space where members can share wins, tips, tools, and resources, ask questions, and connect with other job seekers. It\'s active and encouraging, providing ongoing support throughout your job search.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'What kind of results can I expect?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Members have reported significant career advancements, including landing job offers, negotiating higher salaries, and successful career transitions. The personalized guidance and community support help members achieve tangible results.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Can I cancel my membership?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Yes, you can cancel your membership at any time. There are no long-term commitments, and you can manage your subscription directly through your account settings.',
       },
     ]}
-  />
+/>
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
-
+<Stats
+stats={[
+  { title: 'Avg. Salary Gain', amount: '$10K' },
+  { title: 'Top Salary Gain', amount: '$30K' },
+  { title: 'Members & Alum', amount: '100+' },
+  { title: 'Avg. Time to Interview', amount: '3 weeks' },
+]}
+/>
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
