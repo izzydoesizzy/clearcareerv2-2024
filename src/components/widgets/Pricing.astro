@@ -67,15 +67,23 @@ const gridColsClass = prices.length === 2 ? 'sm:grid-cols-2 md:grid-cols-2 lg:gr
                     )}
                   </div>
                   {callToAction && (
-                    <div class={`flex justify-center`}>
+                    <div class={`flex flex-col items-center`}>
                       {typeof callToAction === 'string' ? (
                         <Fragment set:html={callToAction} />
                       ) : (
                         callToAction &&
-                        callToAction.href && <Button {...(hasRibbon ? { variant: 'primary' } : {})} {...callToAction} />
+                        callToAction.href && (
+                          <>
+                            <Button {...(hasRibbon ? { variant: 'primary' } : {})} {...callToAction} />
+                            {callToAction.buttonsubtext && (
+                              <p class="mt-2 text-gray-500 italic font-light">{callToAction.buttonsubtext}</p> <!-- Updated styles -->
+                            )}
+                          </>
+                        )
                       )}
                     </div>
                   )}
+
                 </div>
               )}
             </div>
