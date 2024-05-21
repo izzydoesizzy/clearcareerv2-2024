@@ -18,6 +18,9 @@ jobs:
       with:
         node-version: '20'
 
+    - name: Clean previous build
+      run: rm -rf ./public
+
     - name: Install dependencies
       run: npm install
 
@@ -32,6 +35,36 @@ jobs:
 
     - name: Print repository URL
       run: echo ${{ github.repository }}
+
+    - name: Set Git user.name
+      run: git config --global user.name "Your Name"
+
+    - name: Set Git user.email
+      run: git config --global user.email "your-email@example.com"
+
+    - name: Verify Git user.name
+      run: git config --global user.name
+
+    - name: Verify Git user.email
+      run: git config --global user.email
+
+    - name: List files in the workspace
+      run: ls -al
+
+    - name: Check for .git directory
+      run: ls -al .git
+
+    - name: Print environment variables
+      run: printenv
+
+    - name: Debug Git status
+      run: git status
+
+    - name: Increase logging verbosity
+      run: |
+        export GIT_TRACE=1
+        export GIT_CURL_VERBOSE=1
+        git status
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
