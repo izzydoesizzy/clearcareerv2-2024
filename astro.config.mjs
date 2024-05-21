@@ -26,6 +26,8 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
+  base: '/clearcareerv2-2024/', // Replace 'repository-name' with your actual repository name
+  // other config options
 
   integrations: [
     tailwind({
