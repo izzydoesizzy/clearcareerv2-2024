@@ -24,6 +24,15 @@ jobs:
     - name: Build project
       run: npm run build
 
+    - name: Show Git version
+      run: git --version
+
+    - name: Show Git config
+      run: git config --list
+
+    - name: Print repository URL
+      run: echo ${{ github.repository }}
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
