@@ -2,7 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 import { defineConfig, squooshImageService } from 'astro/config';
-
+import vercel from '@astrojs/vercel/serverless';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
@@ -25,9 +25,10 @@ const whenExternalScripts = (items = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  output: 'static',
+  output: 'server',  // Change from 'static' to 'server'
   base: '/clearcareerv2-2024/', // Replace 'repository-name' with your actual repository name
   // other config options
+  adapter: vercel(),
 
   integrations: [
     tailwind({
