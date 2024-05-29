@@ -11,6 +11,8 @@ import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+// import Brands from '~/components/widgets/Brands.astro';
+
 
 const metadata = {
   title: 'ClearCareer — Job Search Coaching & Accountability',
@@ -34,7 +36,7 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image4.jpg', alt: 'ClearCareer Community Image' }}
   >
   <Fragment slot="title">
-    A fountain of hope in a never-ending <span class="text-accent dark:text-white highlight">job search nightmare</span>
+    The support community for job seekers <span class="text-accent dark:text-white highlight">that feel stuck</span>
 </Fragment>
 
 <Fragment slot="subtitle">
@@ -43,7 +45,7 @@ const metadata = {
 
   </span>
   <span class="block mb-1 sm:hidden font-bold text-blue-600">
-    Community, Accountability, Resources and Group Coaching to get you unstuck
+    Support, accountability, and resources to help you land the job you want
 
   </span>
 </Fragment>
@@ -53,6 +55,55 @@ const metadata = {
   <!-- Note Widget ******************* -->
 
   <!-- <Note /> -->
+
+
+  <!-- Brands Widget ****************** -->
+
+  <!-- <Brands
+    title="Partnerships & Collaborations"
+    subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+    icons={[]}
+    images={[
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
+        alt: 'Paypal',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
+        alt: 'Visa',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+        alt: 'Ebay',
+      },
+
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'Youtube',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
+        alt: 'Microsoft',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
+        alt: 'Node JS',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
+        alt: 'Google',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
+        alt: 'Meta',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
+        alt: 'Yahoo',
+      },
+    ]}
+    </Brands> -->
+  
 
 <!-- Features Widget *************** -->
 
@@ -146,7 +197,7 @@ const metadata = {
 <!-- Steps Widget ****************** -->
 
 <Steps
-    title="Transform Your Job Search with ClearCareer"
+    title="A Catapult for Your Job Search"
     items={[
       {
         title: 'Step 1: <span class="font-medium">Engage in Weekly Group Calls</span>',
@@ -155,7 +206,7 @@ const metadata = {
         icon: 'tabler:video',
       },
       {
-        title: 'Step 2: <span class="font-medium">AI, Tools & Templates to Work Smarter</span>',
+        title: 'Step 2: <span class="font-medium">Accelerate Your Progress</span>',
         description:
           "Use the latest productivity tools, and 500+ hours of precisely-engineered AI prompts, and proven templates to save 10+ hours a week in your job search.",
         icon: 'tabler:tool',
@@ -175,33 +226,34 @@ const metadata = {
       src: '~/assets/images/success-wins.png',
       alt: 'Steps image',
     }}
+    
   />
 
 <!-- Features2 Widget ************** -->
 
 <Features2
-    title="Top AI Prompts & Templates"
-    subtitle="Essential tools for streamlining your job search and enhancing productivity"
+    title="AI Prompts, Tools, & Templates "
+    subtitle="It's like Batman's Utility Belt - but for your job search"
     tagline="RESOURCES"
     items={[
       {
-        title: 'Quantified Achievements',
+        title: 'Quantify Your Achievements',
         description: 'Jog your memory by generating a list of achievements based on your job title and industry, boosting resume impact.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Instant Salary Research',
+        title: 'Instantly Research Salaries',
         description: 'Instantly gather detailed salary data by location and company size, helping you negotiate better.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Tech Events Calendar',
+        title: 'Discover Industry Events',
         description: 'Find and keep track of all upcoming events in your field, ensuring you never miss networking opportunities.',
         icon: 'flat-color-icons:calendar',
       },
       {
-        title: 'Networking Scripts',
-        description: '18 ways to add value when networking. Effective networking has led to 200+ connections for our members.',
+        title: 'Improve Your Networking',
+        description: 'Tweak the way you reach out to connect authentically, and have more productive conversations.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
@@ -210,36 +262,25 @@ const metadata = {
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Target Company List',
-        description: 'Quickly generate a list of companies that align with your career goals, saving time on research.',
+        title: 'Target Better Companies',
+        description: 'Discover new companies to target that align with your career goals, saving time on research.',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Instant Company Research',
-        description: 'Get a lightning-fast summary of key company details, saving time on research and preparation.',
-        icon: 'flat-color-icons:database',
-      },
-      {
-        title: 'LinkedIn Profile Optimization',
-        description: 'Optimize your LinkedIn profile with AI-generated headlines and a compelling “About Me” summary to increase profile visits and job opportunities.',
-        icon: 'flat-color-icons:gallery',
-      },
- 
-      {
-        title: 'Custom Interview Questions',
-        description: 'Get a list of industry-specific interview questions, helping you win your next interview confidently.',
+        title: 'Level-Up Interview Prep',
+        description: 'Get lightning-fast company research, customized interview questions and prep with a proven framework.',
         icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Optimize Your LinkedIn',
+        description: 'Optimize your LinkedIn profile with AI-generated headlines and a compelling “About Me” summary.',
+        icon: 'flat-color-icons:gallery',
       },
       {
         title: 'Counter Objections',
         description: 'Pinpoint potential employer concerns and develop strategies to counter them, improving your candidacy.',
         icon: 'flat-color-icons:high-priority',
-      },
-      {
-        title: 'Must-Have Tools',
-        description: 'A curated list of the top job search tools for job seekers in 2024. Equip yourself with the best tools for job hunting success.',
-        icon: 'flat-color-icons:support',
-      },
+      }
     ]}
   >
     <Fragment slot="bg">
@@ -262,12 +303,12 @@ const metadata = {
 
   <Prices
   id="pricing"
-  title="Community Membership"
-  subtitle="Choose the plan that works for you"
+  title="Choose Your Own Adventure"
+  subtitle="We're here to support you however it works for you."
   prices={[
     {
       title: 'Monthly Membership',
-      subtitle: 'Great for those exploring their options',
+      subtitle: ', ',
       price: 49,
       period: 'per month',
       items: [
@@ -293,7 +334,7 @@ const metadata = {
     },
     {
       title: 'Lifetime Membership',
-      subtitle: 'Perfect for long-term career growth',
+      subtitle: 'Looking for long-term growth',
       price: 249,
       period: 'one-time payment',
       items: [
