@@ -6,12 +6,12 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
+// import Content from '~/components/widgets/Content.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-// import Testimonials from '~/components/widgets/Testimonials.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 // import Brands from '~/components/widgets/Brands.astro';
 
@@ -55,40 +55,76 @@ const metadata = {
   </Hero>
 
 
+
   <!-- Testimonials Widget *********** -->
-<!-- 
+
   <Testimonials
-    title="Community Success Stories"
-    testimonials={[
-      {
-        testimonial: `Before working with Izzy, I spent 11 months applying to over 500+ job postings and have only landed 10 interviews and no offers. Amazed how just 2 weeks after working with Izzy I’ve landed 3 interviews. `,
-        name: 'Victor P.',
-        job: 'Project Manager',
-        image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-        alt: 'Emily Kennedy Image',
-        },
+  title="Community Success Stories"
+  testimonials={[
+    {
+      heading: '3 Job Offers + a $10K Raise!',
+      testimonial: `Izzy rebuilt my confidence and helped me communicate my strengths, leading to three job offers and a $10k raise. I felt empowered and confident, thanks to Izzy's thoughtful insight and genuine care.`,
+      name: 'Wil G.',
+      job: 'Software Engineer',
+      image: {
+        src: '~/assets/images/wilphoto.jpeg',
+        alt: 'Wil G.',
       },
-      {
-        testimonial: `My clock resets every Tuesday on the group call. After feeling burnt out from rejections each week, I show up for the Tuesday call and I’m filled with energy and motivation from everyone sharing their feedback, wins, and failures.`,
-        name: 'Sparsh K.',
-        job: 'Junior Data Analyst',
-        image: {
-        src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-        alt: 'Sarah Hansen Image',
-        },
+    },
+    {
+      heading: 'From 200+ Applications to a Job in 3 Weeks',
+      testimonial: `A digital marketing company offered me a full-time role. Before Izzy, I applied to 200+ jobs with no success. With Izzy's method, 27 emails led to 3 assessments and a job offer. Thanks, Izzy!`,
+      name: 'Blake M.',
+      job: 'Digital Marketer',
+      image: {
+        src: '~/assets/images/blakephoto.jpeg',
+        alt: 'Blake M.',
       },
-      {
-        testimonial: `Much of my career success can be attributed to the core principles Izzy taught me at the start of my career. Izzy's encouragement and easy-to-follow career tools bolstered my confidence to ask for informational interviews with those I admired - and I landed new jobs! `,
-        name: 'Ha-Doan L.',
-        job: 'Human Resources Coordinator',
-        image: {
-        src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-        alt: 'Mark Wilkinson Image',
-        },
+    },
+    {
+      heading: 'Dream Tech Marketing Role + a $10K Bump!',
+      testimonial: `Izzy helped me navigate salary negotiations after three years of freelancing. With his guidance, I landed my dream tech marketing role and negotiated a $10k increase. Thank you, Izzy!`,
+      name: 'Marsha D.',
+      job: 'Tech Marketer',
+      image: {
+        src: '~/assets/images/marshaphoto.jpeg',
+        alt: 'Marsha Druker',
       },
-    ]}
-  /> -->
+    },
+    {
+      heading: 'Landed an Internal Role + a $25K Increase!',
+      testimonial: `Izzy's guidance transformed my personal narrative, leading to an internal Associate Director role and a $25k pay increase. His expertise in reframing perspective and boosting confidence was invaluable.`,
+      name: 'Chris C.',
+      job: 'Programs & Business Development',
+      image: {
+        src: '~/assets/images/chrisphoto.jpeg',
+        alt: 'Anonymous',
+      },
+    },
+    {
+      heading: 'Finally Landed an Offer + a $6K Increase!',
+      testimonial: `After 12 months of job searching with no success, Izzy's program helped me land an offer with a $6k increase. His motivation and strategies were key to my success.`,
+      name: 'Jorge G.',
+      job: 'Sales Planning Analyst',
+      image: {
+        src: '~/assets/images/jorgephoto.jpeg',
+        alt: 'Jorge Garboza',
+      },
+    },
+    {
+      heading: '2 Offers in 3 Weeks',
+      testimonial: `After a long job search with no results, I joined Izzy’s course and got 2 offers within weeks. His expertise is unmatched and affordable compared to other coaching options.`,
+      name: 'Annie B.',
+      job: 'Marketing Manager',
+      image: {
+        src: '~/assets/images/anniephoto.jpeg',
+        alt: 'Annie Bell',
+      },
+    },
+  ]}
+/>
+
+
 
 
   <!-- Brands Widget ****************** -->
@@ -142,91 +178,44 @@ const metadata = {
 <!-- Features Widget *************** -->
 
 <Features
-    id="features"
-    tagline="WHAT YOU GET"
-    title="Why choose ClearCareer?"
-    subtitle="A support community to accelerate your job search"
-    items={[
-      {
-        title: 'Weekly Group Coaching & Training',
-        description:
-          'Participate in weekly sessions to receive guidance, refine your strategies, and stay on track with your job search.',
-        icon: 'tabler:clipboard-check',
-      },
-      {
-        title: 'Templates, Scripts, and Resources',
-        description:
-          'Access a library of templates, scripts, and resources designed to simplify and enhance your job search process.',
-        icon: 'tabler:tools',
-      },
-      {
-        title: 'Community Support & Accountability',
-        description:
-          'Engage with a community of like-minded professionals for support, advice, and accountability to keep you going.',
-        icon: 'tabler:users',
-      },
-      {
-        title: 'Confidence, Motivation & Real Results',
-        description:
-          'Stay motivated by sharing wins, challenges, resources and more and see real results, from landing interviews to securing job offers.',
-        icon: 'tabler:award',
-      },
-    ]}
-/>
+  id="features"
+  tagline="WHAT YOU GET"
+  title="Why choose ClearCareer?"
+  subtitle="A support community to accelerate your job search"
+  items={[
+    {
+      title: 'Weekly Group Coaching & Training',
+      description:
+        'Participate in weekly sessions to receive guidance, refine your strategies, and stay on track with your job search.',
+      icon: 'tabler:clipboard-check',
+    },
+    {
+      title: 'Templates, Scripts, and Resources',
+      description:
+        'Access a library of templates, scripts, and resources designed to simplify and enhance your job search process.',
+      icon: 'tabler:tools',
+    },
+    {
+      title: 'Community Support & Accountability',
+      description:
+        'Engage with a community of like-minded professionals for support, advice, and accountability to keep you going.',
+      icon: 'tabler:users',
+    },
+    {
+      title: 'Confidence, Motivation & Real Results',
+      description:
+        'Stay motivated by sharing wins, challenges, resources and more and see real results, from landing interviews to securing job offers.',
+      icon: 'tabler:award',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features>
 
-<!-- Content Widget **************** -->
 
-<!-- <Content
-    isReversed
-    tagline="Inside ClearCareer"
-    title="ClearCareer’s Blueprint: Transforming Job Searches!"
-    items={[
-      {
-        title: 'Personalized Coaching',
-        description:
-          'Receive tailored advice and strategies that help you navigate your job search with confidence.',
-      },
-      {
-        title: 'Supportive Community',
-        description:
-          'Engage with a network of professionals who share your ambitions and provide mutual support.',
-      },
-      {
-        title: 'Proven Techniques',
-        description:
-          'Implement effective job search strategies that have helped countless members achieve their career goals.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Community Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry-leading job search practices.
-    </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  
-    <Fragment slot="content">Ensure your job search truly represents you.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content> -->
-
-  
-    <!-- <Fragment slot="content">Designed to foster growth and success.</Fragment> -->
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
 <!-- Steps Widget ****************** -->
 
@@ -262,6 +251,35 @@ const metadata = {
     }}
     
   />
+
+  <Testimonials
+  testimonials={[
+    {
+      heading: 'A real life Wizard of Work',
+      testimonial: `Izzy is no hype. This man is a real life wizard of “work”, and he’s sensitive with a big ole heart. He’s leveraging technology in ways most coaches don’t even know HOW TO use yet.`,
+      name: 'Kay W.',
+      job: 'Product Manager',
+    },
+    {
+      heading: 'Just the kickstart I needed!',
+      testimonial: `I reached out to Izzy with no expectations. He gave me exactly what I needed; a kickstart!`,
+      name: 'Adam K.',
+      job: 'General Manager Operations',
+    },
+    {
+      heading: 'A Positive & Empowering Experience',
+      testimonial: `I wholeheartedly recommend Izzy to anyone seeking not only a resume overhaul but also a positive and empowering experience in navigating their career journey.`,
+      name: 'Danica S.',
+      job: 'Spatial Ecologist',
+    },
+    {
+      heading: 'Caring, supportive and dedicated',
+      testimonial: `Izzy is the most caring, supportive, and dedicated career coach I’ve ever worked with. He has not only transformed the way I apply for jobs, but also helped build my confidence.`,
+      name: 'Courtenay B.',
+      job: 'Product Manager',
+    },
+  ]}
+/>
 
 <!-- Features2 Widget ************** -->
 
@@ -404,22 +422,50 @@ const metadata = {
   
 
 />
-<!-- Testimonials Widget *********** -->
 
-<!-- <Testimonials
-testimonials={[
-  {
-    testimonial: `Izzy is a master at reframing perspective, boosting confidence, and setting you up for success. With his help I landed an internal Associate Director role and negotiated a $25k pay increase, far exceeding my expectations.`,
-    name: 'Anonymous',
-    job: 'Associate Director - Programs & Development',
-    image: {
-      src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-      alt: 'Emily Kennedy Image',
+
+<Testimonials
+  title="Another Set of Success Stories"
+  testimonials={[
+   {
+      heading: 'Named My Imposter Syndrome',
+      subheading: 'Negotiated a $10K Increase',
+      testimonial: `Izzy really helped me as a developer and a professional. He named my imposter syndrome and helped me realize that I have A LOT more skills, talents, and abilities than I give myself credit for.`,
+      name: 'Septembre A.',
+      job: 'Software Engineer',
+      image: {
+        src: '~/assets/images/septembrephoto.jpeg',
+        alt: 'Septembre A.',
+      },
     },
-  }
-]}
+   {
+      heading: 'Highly Recommend - 10/10',
+      subheading: 'Increased Her Salary by $30K',
+      testimonial: `I can't stress enough how invaluable Izzy’s insights have been in this journey. Highly recommend - 10/10. He knows his stuff and has a way of getting you to look at things from a different perspective. If you have the chance to work with him, go for it.`,
+      name: 'Tamara G.',
+      job: 'Customer Success Manager',
+      image: {
+        src: '~/assets/images/tamaraphoto.jpeg',
+        alt: 'Tamara G.',
+      },
+    },
+    {
+      heading: 'Fresh Ideas and Realistic Goals',
+      subheading: 'Increased His Salary by $20K',
+      testimonial: `You can tell Izzy really wants people to succeed. He listens patiently to your goals and then provides fresh ideas that can make a difference. He's also good at keeping you realistic, but in a way that makes you believe you can achieve more than you think you can.`,
+      name: 'Julian P.',
+      job: 'Senior Risk Manager',
+      image: {
+        src: '~/assets/images/chrisphoto.jpeg',
+        alt: 'Julian P.',
+      },
+    },
+  ]}
 />
-  <FAQs
+
+
+
+<FAQs
     title="Frequently Asked Questions"
     subtitle="Explore these common questions to learn more about how ClearCareer Group Coaching can transform your job search journey."
     tagline="FAQs"
@@ -453,12 +499,38 @@ testimonials={[
       {
         title: 'Can I cancel my membership?',
         description:
-          'Yes, you can cancel your membership at any time. There are no long-term commitments, and you can manage your subscription directly through your account settings.',
+          'Yes, you can cancel your membership at any time. There are no long-term commitments, and you can manage your subscription directly through the community app.',
       },
     ]}
-/> -->
+/> 
 
-  <!-- Stats Widget ****************** -->
+
+<Testimonials
+  title="More Success Stories"
+  testimonials={[
+    {
+      heading: 'Take the Leap',
+      testimonial: `Izzy has always exceeded my expectations in our work together. He will absolutely bring out the best in you. Take the leap - you won't regret it.`,
+      name: 'Mazia S.',
+      job: '',
+      image: {
+        src: '~/assets/images/maziaphoto.jpeg',
+        alt: 'Mazia S.',
+      },
+    },
+    {
+      heading: 'If youre on the fence, go for it',
+      testimonial: `If you’re on the fence, go for it. I pondered job search coaching after a LONG job search black hole. I joined Izzy’s course and within weeks got 2 offers.`,
+      name: 'Annie B.',
+      job: 'Increased her salary by 200% since completing the program',
+      image: {
+        src: '~/assets/images/anniephoto.jpeg',
+        alt: 'Annie B.',
+      },
+    },
+  ]}
+/>
+<!-- Stats Widget ****************** -->
 
 <Stats
 stats={[
