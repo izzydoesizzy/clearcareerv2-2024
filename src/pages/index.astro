@@ -2,6 +2,8 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Prices from '~/components/widgets/Pricing.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+
 // import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -24,42 +26,38 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Ignite my job search',
-        href: '#pricing',
-        icon: 'tabler:rocket',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image4.jpg', alt: 'ClearCareer Community Image' }}
-  >
+  <Hero2
+  tagline="Stuck in a job search black hole?"
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Join the Community',
+      href: '#pricing',
+      icon: 'tabler:rocket',
+    },
+    { text: 'Learn more', href: '#features' },
+  ]}
+  image={{
+    src: '~/assets/images/tamaratestimonial.png',
+    alt: 'AstroWind Hero Image',
+  }}
+>
   <Fragment slot="title">
-    The low-pressure job search community <span class="text-accent dark:text-white highlight">that gets you unstuck</span>
-</Fragment>
+    Stop Wasting Time <br /> Start Getting <span class="text-accent dark:text-white highlight"
+      >Results</span>
+  </Fragment>
 
-<Fragment slot="subtitle">
-  <span class="hidden sm:inline">
-      Stop feeling alone and stuck. Join the community and get the <span class="font-semibold">support, accountability and resources you need</span> to land your next role.
-
-  </span>
-  <span class="block mb-1 sm:hidden font-bold text-blue-600">
-    Support, accountability, and resources to help you land the job you want
-
-  </span>
-</Fragment>
-
-  </Hero>
-
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+    ClearCareer is the unique job search community where you get all the <span class="font-semibold">coaching, accountability</span> and <span class="font-semibold">cutting-edge resources</span> you need to <span class="font-semibold">land your next job!</span>
+  </Fragment>
+</Hero2>
 
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-  title="Community Success Stories"
+  title="Some of our Community Success Stories"
   testimonials={[
     {
       heading: '3 Job Offers + a $10K Raise!',
@@ -184,27 +182,39 @@ const metadata = {
   subtitle="A support community to accelerate your job search"
   items={[
     {
-      title: 'Weekly Group Coaching & Training',
+      title: 'Get Weekly Group Coaching',
       description:
         'Participate in weekly sessions to receive guidance, refine your strategies, and stay on track with your job search.',
       icon: 'tabler:clipboard-check',
     },
     {
-      title: 'Templates, Scripts, and Resources',
+      title: 'Use Templates, Scripts, and Resources',
       description:
         'Access a library of templates, scripts, and resources designed to simplify and enhance your job search process.',
       icon: 'tabler:tools',
     },
     {
-      title: 'Community Support & Accountability',
+      title: 'Find Community Support & Accountability',
       description:
         'Engage with a community of like-minded professionals for support, advice, and accountability to keep you going.',
       icon: 'tabler:users',
     },
     {
-      title: 'Confidence, Motivation & Real Results',
+      title: 'Gain Confidence & Motivation & Direction',
       description:
         'Stay motivated by sharing wins, challenges, resources and more and see real results, from landing interviews to securing job offers.',
+      icon: 'tabler:award',
+    },
+    {
+      title: 'Make Networking Feel Natural',
+      description:
+        'Learn how to build relationships with ease. Share experiences, ask questions, and build a network that opens doors to new opportunities.',
+      icon: 'tabler:award',
+    },
+    {
+      title: 'Develop Your Personal Brand',
+      description:
+        'Refine your personal brand, and gain the confidence to position yourself as the ideal candidate for the roles you want.',
       icon: 'tabler:award',
     },
   ]}
@@ -429,7 +439,7 @@ const metadata = {
   testimonials={[
    {
       heading: 'Named My Imposter Syndrome',
-      subheading: 'Negotiated a $10K Increase',
+      subheading: '🏆 Negotiated a $10K Increase',
       testimonial: `Izzy really helped me as a developer and a professional. He named my imposter syndrome and helped me realize that I have A LOT more skills, talents, and abilities than I give myself credit for.`,
       name: 'Septembre A.',
       job: 'Software Engineer',
@@ -440,7 +450,7 @@ const metadata = {
     },
    {
       heading: 'Highly Recommend - 10/10',
-      subheading: 'Increased Her Salary by $30K',
+      subheading: '🎉 Increased Her Salary by $30K',
       testimonial: `I can't stress enough how invaluable Izzy’s insights have been in this journey. Highly recommend - 10/10. He knows his stuff and has a way of getting you to look at things from a different perspective. If you have the chance to work with him, go for it.`,
       name: 'Tamara G.',
       job: 'Customer Success Manager',
@@ -450,9 +460,9 @@ const metadata = {
       },
     },
     {
-      heading: 'Fresh Ideas and Realistic Goals',
-      subheading: 'Increased His Salary by $20K',
-      testimonial: `You can tell Izzy really wants people to succeed. He listens patiently to your goals and then provides fresh ideas that can make a difference. He's also good at keeping you realistic, but in a way that makes you believe you can achieve more than you think you can.`,
+      heading: 'Actionable Ideas & Inspiration',
+      subheading: '💰 Increased His Salary by $20K',
+      testimonial: `You can tell Izzy really wants people to succeed. He listens patiently to your goals and then provides fresh ideas that can make a difference. He's also good at keeping you realistic in a way that makes you believe you can achieve more.`,
       name: 'Julian P.',
       job: 'Senior Risk Manager',
       image: {
@@ -506,23 +516,23 @@ const metadata = {
 
 
 <Testimonials
-  title="#NoRegrets"
+  title="Our People Have #NoRegrets"
   testimonials={[
     {
-      heading: 'Take the Leap',
+      heading: 'Take the leap',
       testimonial: `Izzy has always exceeded my expectations in our work together. He will absolutely bring out the best in you. Take the leap - you won't regret it.`,
       name: 'Mazia S.',
-      job: '',
+      job: 'Software Developer',
       image: {
         src: '~/assets/images/chrisphoto.jpeg',
         alt: 'Mazia S.',
       },
     },
     {
-      heading: 'If youre on the fence, go for it',
+      heading: 'If you\'re on the fence, go for it',
       testimonial: `If you’re on the fence, go for it. I pondered job search coaching after a LONG job search black hole. I joined Izzy’s course and within weeks got 2 offers.`,
       name: 'Annie B.',
-      job: 'Increased her salary by 200% since completing the program',
+      job: 'Marketing Manager',
       image: {
         src: '~/assets/images/anniephoto.jpeg',
         alt: 'Annie B.',
