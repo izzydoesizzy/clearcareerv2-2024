@@ -8,7 +8,7 @@ import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
-// import Content from '~/components/widgets/Content.astro';
+import Content from '~/components/widgets/Content.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -53,7 +53,17 @@ const metadata = {
   </Fragment>
 </Hero2>
 
+<!-- Stats Widget ****************** -->
 
+<Stats
+stats={[
+  { title: 'Avg. Salary Gain', amount: '$10K' },
+  { title: 'Top Salary Gain', amount: '$30K' },
+  { title: 'Alum', amount: '100+' },
+  { title: 'Your Power Level', amount: 'Over 9K' },
+  // { title: 'Avg. Time to Interview', amount: '3 weeks' },
+]}
+/>
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
@@ -122,8 +132,113 @@ const metadata = {
   ]}
 />
 
+<!-- Content Widget **************** -->
 
+<Content
+ isReversed
+ tagline="WHAT'S INSIDE"
+ title="How you'll accelerate your job search with ClearCareer"
+ items={[
+  {
+    title: 'Gain Clarity and Direction',
+    description:
+      'Enhance your job search clarity and direction with targeted feedback and actionable advice.',
+  },
+  {
+    title: 'Overcome Your Roadblocks',
+    description:
+      'Collaborate with community members to identify and overcome job search challenges, ensuring you stay on track.',
+  },
+  {
+    title: 'Share and Discuss Strategies',
+    description:
+      'Generate innovative ideas for companies to approach, things to say, and strategies to use in your job search.',
+  },
+  
+]}
+ image={{
+   src: '~/assets/images/zoomcall1.webp',
+   alt: 'Colorful Image',
+ }}
+>
+ <Fragment slot="content">
+   <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Weekly Group Coaching</h3>
+   Join our weekly group calls to stay engaged, adjust your strategies, and keep your momentum going.
+ </Fragment>
 
+ <Fragment slot="bg">
+   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+ </Fragment>
+</Content>
+
+<Content
+ items={[
+   {
+     title: 'Harness the Power of AI',
+     description:
+       'Leverage 500+ hours of custom-engineered AI prompts to tackle every roadblock you encounter.',
+   },
+   {
+     title: 'Work Faster with the Right Tools',
+     description:
+       'Access the latest tools to write and optimize your resume, tailor applications, enhance interview skills, and boost job search productivity.',
+   },
+   {
+     title: 'Quickly Tweak Email Templates',
+     description:
+       'Pick from our collection of easily AI-customizable email templates to save hours every week and leave an unforgettable impression.',
+   }
+   
+ ]}
+ image={{
+   src: '~/assets/images/resources.webp',
+   alt: 'Colorful Image',
+ }}
+>
+ <Fragment slot="content">
+   <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Templates, Scripts, and Resources</h3>
+   Access a library of templates, scripts, and resources designed to simplify and enhance your job search process.
+
+ </Fragment>
+
+ <Fragment slot="bg">
+   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+ </Fragment>
+</Content>
+
+<Content
+ isReversed
+ items={[
+   {
+     title: 'Share and Celebrate Wins',
+     description:
+       'Share your wins - big or small, so we can celebrate together, keep your spirits high and keep the momentum strong.',
+   },
+   {
+     title: 'Get Help and Feedback',
+     description:
+       'Get constructive feedback on your resume, LinkedIn profile, or anything else and navigate your job search alongside a supportive community.',
+   },
+   {
+     title: 'Set Goals & Stay Accountable',
+     description:
+       'Set and share your top 3 weekly priorities with the community to ensure you stay on track and maintain momentum in your job search journey.',
+   }
+ ]}
+ image={{
+   src: '~/assets/images/ipadwins.webp',
+   alt: 'Colorful Image',
+ }}
+>
+ <Fragment slot="content">
+   <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Community Support & Accountability</h3>
+   Engage with a community of like-minded professionals for support, advice, and accountability to keep you going.
+ </Fragment>
+
+ <Fragment slot="bg">
+   <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+ </Fragment>
+</Content>
 
   <!-- Brands Widget ****************** -->
 
@@ -173,49 +288,61 @@ const metadata = {
     </Brands> -->
   
 
+    <Testimonials
+    testimonials={[
+      
+      {
+        heading: 'Just the kickstart I needed!',
+        testimonial: `I reached out to Izzy with no expectations. He gave me exactly what I needed; a kickstart!`,
+        name: 'Adam K.',
+        job: 'General Manager Operations',
+      },
+      {
+        heading: 'A Positive & Empowering Experience',
+        testimonial: `I wholeheartedly recommend Izzy to anyone seeking not only a resume overhaul but also a positive and empowering experience in navigating their career journey.`,
+        name: 'Danica S.',
+        job: 'Spatial Ecologist',
+      },
+      {
+        heading: 'Caring, supportive and dedicated',
+        testimonial: `Izzy is the most caring, supportive, and dedicated career coach I’ve ever worked with. He has not only transformed the way I apply for jobs, but also helped build my confidence.`,
+        name: 'Courtenay B.',
+        job: 'Product Manager',
+      },
+    ]}
+  />
+  
 <!-- Features Widget *************** -->
 
 <Features
   id="features"
-  tagline="WHAT YOU GET"
+  tagline="UNLOCK YOUR POTENTIAL"
   title="Why choose ClearCareer?"
-  subtitle="A support community to accelerate your job search"
+  subtitle="Bring out the real you that’s been waiting to shine"
   items={[
     {
-      title: 'Get Weekly Group Coaching',
+      title: 'Feel Valued and Confident',
       description:
-        'Participate in weekly sessions to receive guidance, refine your strategies, and stay on track with your job search.',
-      icon: 'tabler:clipboard-check',
+        'Learn to identify the unique value of your work experience and your most noteworthy achievements, and highlight the impact you\'ve had.',
+      icon: 'tabler:star',
     },
     {
-      title: 'Use Templates, Scripts, and Resources',
-      description:
-        'Access a library of templates, scripts, and resources designed to simplify and enhance your job search process.',
-      icon: 'tabler:tools',
-    },
-    {
-      title: 'Find Community Support & Accountability',
-      description:
-        'Engage with a community of like-minded professionals for support, advice, and accountability to keep you going.',
-      icon: 'tabler:users',
-    },
-    {
-      title: 'Gain Confidence & Motivation & Direction',
+      title: 'Gain Motivation and Clarity',
       description:
         'Stay motivated by sharing wins, challenges, resources and more and see real results, from landing interviews to securing job offers.',
-      icon: 'tabler:award',
+      icon: 'tabler:bulb',
     },
     {
       title: 'Make Networking Feel Natural',
       description:
         'Learn how to build relationships with ease. Share experiences, ask questions, and build a network that opens doors to new opportunities.',
-      icon: 'tabler:award',
+      icon: 'tabler:users',
     },
     {
       title: 'Develop Your Personal Brand',
       description:
         'Refine your personal brand, and gain the confidence to position yourself as the ideal candidate for the roles you want.',
-      icon: 'tabler:award',
+      icon: 'tabler:crown',
     },
   ]}
 >
@@ -225,33 +352,31 @@ const metadata = {
 </Features>
 
 
-
-
 <!-- Steps Widget ****************** -->
 
 <Steps
     title="Your Success Broken Down Step-By-Step"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Engage in Weekly Group Calls</span>',
+        title: 'Step 1: <span class="font-medium">Clarify Your Career Path</span>',
         description:
-          "Actively participate in our weekly group Q&A calls. Break through roadblocks, ask questions, and get real-time feedback to refine your job search strategy.",
-        icon: 'tabler:video',
+          "Assess your wants, needs, and dealbreakers to gain clarity and direction, and flip the switch from reactive to proactive.",
+        icon: 'tabler:compass',
       },
       {
-        title: 'Step 2: <span class="font-medium">Accelerate Your Job Search</span>',
+        title: 'Step 2: <span class="font-medium">Target the Right Companies</span>',
         description:
-          "Use the latest productivity tools, and 500+ hours of precisely-engineered AI prompts, and proven templates to save 10+ hours a week in your job search.",
-        icon: 'tabler:tool',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Set Weekly Goals and Stay Accountable</span>',
-        description:
-          "Set career goals and leverage our community for accountability. Track progress and stay motivated with support and encouragement from fellow members.",
+          "Use transformative AI prompts to discover and target the companies and roles that align with your needs.",
         icon: 'tabler:target',
       },
       {
-        title: 'Land The Job!',
+        title: 'Step 3: <span class="font-medium">Master Your Outreach</span>',
+        description:
+          "Master your outreach by using sophisticated prospecting and tracking tools, and proven templates.",
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Land The Job!</span>',
         icon: 'tabler:check',
       },
     ]}
@@ -261,42 +386,14 @@ const metadata = {
     }}
     
   />
-
-  <Testimonials
-  testimonials={[
-    {
-      heading: 'A real life Wizard of Work',
-      testimonial: `Izzy is no hype. This man is a real life wizard of “work”, and he’s sensitive with a big ole heart. He’s leveraging technology in ways most coaches don’t even know HOW TO use yet.`,
-      name: 'Kay W.',
-      job: 'Product Manager',
-    },
-    {
-      heading: 'Just the kickstart I needed!',
-      testimonial: `I reached out to Izzy with no expectations. He gave me exactly what I needed; a kickstart!`,
-      name: 'Adam K.',
-      job: 'General Manager Operations',
-    },
-    {
-      heading: 'A Positive & Empowering Experience',
-      testimonial: `I wholeheartedly recommend Izzy to anyone seeking not only a resume overhaul but also a positive and empowering experience in navigating their career journey.`,
-      name: 'Danica S.',
-      job: 'Spatial Ecologist',
-    },
-    {
-      heading: 'Caring, supportive and dedicated',
-      testimonial: `Izzy is the most caring, supportive, and dedicated career coach I’ve ever worked with. He has not only transformed the way I apply for jobs, but also helped build my confidence.`,
-      name: 'Courtenay B.',
-      job: 'Product Manager',
-    },
-  ]}
-/>
+  
 
 <!-- Features2 Widget ************** -->
 
 <Features2
     title="AI Prompts, Tools, & Templates "
     subtitle="It's like Batman's Utility Belt - but for your job search"
-    tagline="RESOURCES"
+    tagline="OUR FAVOURITE TOOLS"
     items={[
       {
         title: 'Quantify Your Achievements',
@@ -538,18 +635,15 @@ const metadata = {
         alt: 'Annie B.',
       },
     },
+    {
+        heading: 'A real life Wizard',
+        testimonial: `Izzy is no hype. This man is a real life wizard of “work”, and he’s sensitive with a big ole heart. He’s leveraging technology in ways most coaches don’t even know HOW TO use yet.`,
+        name: 'Kay W.',
+        job: 'Product Manager',
+      },
   ]}
 />
-<!-- Stats Widget ****************** -->
 
-<Stats
-stats={[
-  { title: 'Avg. Salary Gain', amount: '$10K' },
-  { title: 'Top Salary Gain', amount: '$30K' },
-  { title: 'Alum', amount: '100+' },
-  // { title: 'Avg. Time to Interview', amount: '3 weeks' },
-]}
-/>
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
