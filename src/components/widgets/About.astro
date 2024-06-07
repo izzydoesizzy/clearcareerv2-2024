@@ -1,0 +1,39 @@
+---
+import { Fragment } from 'astro/components';
+---
+
+<Fragment>
+  <section class="relative flex flex-col md:flex-row items-center my-8 md:my-16">
+    <div class="md:w-1/2 p-4 order-2 md:order-1">
+      <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">MEET YOUR COACH</p>
+      <h3 class="text-4xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> 👋 Hi there, I'm Izzy</h3>
+      <p class="mb-4">I've been in your shoes—struggling with endless resume rewrites and job applications that led nowhere.</p>
+      <p class="mb-4">I'm a <strong>career zig-zagger</strong>, a <strong>jack-of-all-trades</strong> who loves learning new skills and diving into new industries. Telling a clear career story was tough, especially without well-defined performance metrics.</p>
+      <p class="mb-4">I've always been a <strong>tech enthusiast</strong> and the <strong>go-to family IT guy</strong>. When I decided to transition from higher education to tech, I had no idea where to start. My resume was a mess, but I was determined to break into tech.</p>
+      <p class="mb-4">I read, listened to podcasts, and attended events. It was challenging to grasp concepts like <strong>Venture Capital</strong>, <strong>Agile</strong>, <strong>Valuations</strong>, <strong>Churn Rates</strong>, <strong>Burn Rates</strong>, <strong>DevOps</strong>, and <strong>SaaS</strong>. I often felt out of place, like I needed a <strong>Duolingo for tech</strong>.</p>
+    </div>
+    <div class="md:w-1/2 p-4 order-1 md:order-2">
+      <img src={import.meta.env.BASE_URL + 'assets/images/izzyprofilepic.webp'} alt="Colorful Image" class="w-full rounded-lg" />
+    </div>
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </section>
+
+  <section class="relative flex flex-col md:flex-row items-center my-8 md:my-16">
+    <div class="md:w-1/2 p-4">
+      <img src={import.meta.env.BASE_URL + 'assets/images/izzyprofilepic.webp'} alt="Colorful Image" class="w-full rounded-lg" />
+    </div>
+    <div class="md:w-1/2 p-4">
+      <p class="mb-4">But my <strong>curiosity</strong> and <strong>love of learning</strong> prevailed. Talking to people revealed my unique industry insights, community-building skills, and partnership development experience.</p>
+      <p class="mb-4">That's when everything <strong>clicked</strong>. Job opportunities came from conversations, not applications. <strong>Networking, referrals, and word of mouth</strong> were key.</p>
+      <p class="mb-4">Since 2016, my mission has been to <strong>build the support network</strong> I wished I had when I struggled in silence.</p>
+      <p class="mb-4">Today, I use my experience, passion for tech, and unique strategies to help job seekers just like you:</p>
+      <ul class="mb-4">
+        <li>Break out of action paralysis</li>
+        <li>Design the career they truly want</li>
+        <li>Learn and network authentically</li>
+        <li>Build the doors of opportunity to land the job they want</li>
+      </ul>
+    </div>
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </section>
+</Fragment>

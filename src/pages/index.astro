@@ -16,6 +16,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 
 // import Brands from '~/components/widgets/Brands.astro';
+import About from '~/components/widgets/About.astro'
 
 
 const metadata = {
@@ -211,6 +212,61 @@ stats={[
  </Fragment>
 </Content>
 
+<Features2
+title="AI Prompts, Tools, & Templates "
+subtitle="It's like Batman's Utility Belt - but for your job search"
+tagline="OUR FAVOURITE TOOLS"
+items={[
+  {
+    title: 'Quantify Your Achievements',
+    description: 'Jog your memory by generating a list of achievements based on your job title and industry, boosting resume impact.',
+    icon: 'flat-color-icons:approval',
+  },
+  {
+    title: 'Instantly Research Salaries',
+    description: 'Instantly gather detailed salary data by location and company size, helping you negotiate better.',
+    icon: 'flat-color-icons:currency-exchange',
+  },
+  {
+    title: 'Discover Industry Events',
+    description: 'Find and keep track of all upcoming events in your field, ensuring you never miss networking opportunities.',
+    icon: 'flat-color-icons:calendar',
+  },
+  {
+    title: 'Improve Your Networking',
+    description: 'Tweak the way you reach out to connect authentically, and have more productive conversations.',
+    icon: 'flat-color-icons:voice-presentation',
+  },
+  {
+    title: 'Email Templates Galore',
+    description: 'Comprehensive email templates for job seekers, including hiring manager emails and silver-bullet thank you emails.',
+    icon: 'flat-color-icons:document',
+  },
+  {
+    title: 'Target Better Companies',
+    description: 'Discover new companies to target that align with your career goals, saving time on research.',
+    icon: 'flat-color-icons:template',
+  },
+  {
+    title: 'Level-Up Interview Prep',
+    description: 'Get lightning-fast company research, customized interview questions and prep with a proven framework.',
+    icon: 'flat-color-icons:document',
+  },
+  {
+    title: 'Optimize Your LinkedIn',
+    description: 'Optimize your LinkedIn profile with AI-generated headlines and a compelling “About Me” summary.',
+    icon: 'flat-color-icons:gallery',
+  },
+  {
+    title: 'Counter Objections',
+    description: 'Pinpoint potential employer concerns and develop strategies to counter them, improving your candidacy.',
+    icon: 'flat-color-icons:high-priority',
+  }
+]}
+>
+
+</Features2>
+
   <!-- Brands Widget ****************** -->
 
   <!-- <Brands
@@ -259,29 +315,6 @@ stats={[
     </Brands> -->
   
 
-    <Testimonials
-    testimonials={[
-      
-      {
-        heading: 'Just the kickstart I needed!',
-        testimonial: `I reached out to Izzy with no expectations. He gave me exactly what I needed; a kickstart!`,
-        name: 'Adam K.',
-        job: 'General Manager Operations',
-      },
-      {
-        heading: 'A Positive & Empowering Experience',
-        testimonial: `I wholeheartedly recommend Izzy to anyone seeking not only a resume overhaul but also a positive and empowering experience in navigating their career journey.`,
-        name: 'Danica S.',
-        job: 'Spatial Ecologist',
-      },
-      {
-        heading: 'Caring, supportive and dedicated',
-        testimonial: `Izzy is the most caring, supportive, and dedicated career coach I’ve ever worked with. He has not only transformed the way I apply for jobs, but also helped build my confidence.`,
-        name: 'Courtenay B.',
-        job: 'Product Manager',
-      },
-    ]}
-  />
   
 <!-- Features Widget *************** -->
 
@@ -357,66 +390,84 @@ stats={[
     }}
     
   />
+
+  <!-- Features2 Widget ************** -->
+
+  <Testimonials
+  testimonials={[
+    
+    {
+      heading: 'Just the kickstart I needed!',
+      testimonial: `I reached out to Izzy with no expectations. He gave me exactly what I needed; a kickstart!`,
+      name: 'Adam K.',
+      job: 'General Manager Operations',
+    },
+    {
+      heading: 'A Positive & Empowering Experience',
+      testimonial: `I wholeheartedly recommend Izzy to anyone seeking not only a resume overhaul but also a positive and empowering experience in navigating their career journey.`,
+      name: 'Danica S.',
+      job: 'Spatial Ecologist',
+    },
+    {
+      heading: 'Caring, supportive and dedicated',
+      testimonial: `Izzy is the most caring, supportive, and dedicated career coach I’ve ever worked with. He has not only transformed the way I apply for jobs, but also helped build my confidence.`,
+      name: 'Courtenay B.',
+      job: 'Product Manager',
+    },
+  ]}
+/>
+
+
+  <Content
+  isReversed
+  image={{
+    src: '~/assets/images/izzyprofilepic.webp',
+    alt: 'Colorful Image',
+  }}
+ >
+  <Fragment slot="content">
+   <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">MEET YOUR COACH</p>
+   <h3 class="text-4xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> 👋 Hi there, I'm Izzy</h3>
+   <p class="mb-4">As a <strong>career zig-zagger and jack-of-all-trades</strong>, I've always struggled to create a coherent career story and showcase my value.</p>
+   <p class="mb-4">I've been tormented by long periods of <em>unemployment</em>, feeling <em>unclear, confused, and unmotivated</em>, and <strong>been stuck in negative cycles that were hard to break.</strong></p>
+   <p class="mb-4">When I transitioned into tech, I devoured every resource about the industry. It was then I found out that anytime I attended events, people were mesmerized by my <em>energy, resourcefulness, and genuine desire to connect and add value</em>.</p>
+   <p class="mb-4">Then it clicked: my unique intersection of skills was my value—<em>partnerships, community, events, mentorship, rapid execution, and problem-solving</em>. </p><p class="mb-4">That's when <strong>job opportunities started to bubble up.</strong></p>
+  </Fragment>
+ 
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+ </Content>
+ 
+ <Content
+  image={{
+    src: '~/assets/images/izzymultiples.webp',
+    alt: 'Colorful Image',
+  }}
+ >
+  <Fragment slot="content">
+    <p class="mb-4">Since 2016, I've been on a mission to <strong>create the support network and community I wished I had</strong> when I was struggling in silence.</p>
+
+    <h4 class="text-2xl font-bold mt-6 mb-3	">Here's a snapshot:</h4>
+   <p class="mb-4"><strong>Empowering Job Seekers:</strong> I’ve taken clients from over a year of unemployment to <em>job offers within weeks</em>, helped them <em>increase their salaries by $30K</em>, and given them confidence in their negotiation skills—guiding hundreds to <em>feel valued and worthy again</em>.</p>
+   <p class="mb-4"><strong>Building Community:</strong> I founded a 900+ member peer-mentorship community for job-seekers.</p>
+   <p class="mb-4"><strong>Media Features:</strong> I've been featured on podcasts and radio shows including <em>CBC's For What It's Worth, Notable Life, CreateCommunity, and more</em>.</p>
+   <p class="mb-4"><strong>Workshops:</strong> I've been asked to deliver workshops for <em>UofT, TMU, Humber College, CivicAction YouthConnect, Lighthouse Labs, and the United Nations Association in Canada</em>.</p>
+   <p class="mb-4">With that said, <strong>welcome to the ClearCareer Community!</strong> I'm excited to see you inside!</p>
+  
+  </Fragment>
+
+ 
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+ </Content>
+ 
+
+
   
 
-<!-- Features2 Widget ************** -->
 
-<Features2
-    title="AI Prompts, Tools, & Templates "
-    subtitle="It's like Batman's Utility Belt - but for your job search"
-    tagline="OUR FAVOURITE TOOLS"
-    items={[
-      {
-        title: 'Quantify Your Achievements',
-        description: 'Jog your memory by generating a list of achievements based on your job title and industry, boosting resume impact.',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Instantly Research Salaries',
-        description: 'Instantly gather detailed salary data by location and company size, helping you negotiate better.',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Discover Industry Events',
-        description: 'Find and keep track of all upcoming events in your field, ensuring you never miss networking opportunities.',
-        icon: 'flat-color-icons:calendar',
-      },
-      {
-        title: 'Improve Your Networking',
-        description: 'Tweak the way you reach out to connect authentically, and have more productive conversations.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Email Templates Galore',
-        description: 'Comprehensive email templates for job seekers, including hiring manager emails and silver-bullet thank you emails.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Target Better Companies',
-        description: 'Discover new companies to target that align with your career goals, saving time on research.',
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Level-Up Interview Prep',
-        description: 'Get lightning-fast company research, customized interview questions and prep with a proven framework.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Optimize Your LinkedIn',
-        description: 'Optimize your LinkedIn profile with AI-generated headlines and a compelling “About Me” summary.',
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Counter Objections',
-        description: 'Pinpoint potential employer concerns and develop strategies to counter them, improving your candidacy.',
-        icon: 'flat-color-icons:high-priority',
-      }
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
 
 
   
@@ -432,6 +483,75 @@ stats={[
   /> -->
 
   <!-- FAQs Widget ******************* -->
+
+  <Testimonials
+  title="More Success Stories"
+  testimonials={[
+   {
+      heading: 'Named My Imposter Syndrome',
+      subheading: '🏆 Negotiated a $10K Increase',
+      testimonial: `Izzy really helped me as a developer and a professional. He named my imposter syndrome and helped me realize that I have A LOT more skills, talents, and abilities than I give myself credit for.`,
+      name: 'Septembre A.',
+      job: 'Software Engineer',
+      image: {
+        src: '~/assets/images/septembrephoto.jpeg',
+        alt: 'Septembre A.',
+      },
+    },
+   {
+      heading: 'Highly Recommend - 10/10',
+      subheading: '🎉 Increased Her Salary by $30K',
+      testimonial: `I can't stress enough how invaluable Izzy’s insights have been in this journey. Highly recommend - 10/10. He knows his stuff and has a way of getting you to look at things from a different perspective. If you have the chance to work with him, go for it.`,
+      name: 'Tamara G.',
+      job: 'Customer Success Manager',
+      image: {
+        src: '~/assets/images/tamaraphoto.jpeg',
+        alt: 'Tamara G.',
+      },
+    },
+    {
+      heading: 'Actionable Ideas & Inspiration',
+      subheading: '💰 Increased His Salary by $20K',
+      testimonial: `You can tell Izzy really wants people to succeed. He listens patiently to your goals and then provides fresh ideas that can make a difference. He's also good at keeping you realistic in a way that makes you believe you can achieve more.`,
+      name: 'Julian P.',
+      job: 'Senior Risk Manager',
+      image: {
+        src: '~/assets/images/chrisphoto.jpeg',
+        alt: 'Julian P.',
+      },
+    },
+    {
+      heading: 'Landed Associate Director + $25K',
+      testimonial: `Izzy's guidance transformed my personal narrative, leading to an internal Associate Director role and a $25k pay increase. His expertise in reframing perspective and boosting confidence was invaluable.`,
+      name: 'Chris C.',
+      job: 'Programs & Business Development',
+      image: {
+        src: '~/assets/images/chrisphoto.jpeg',
+        alt: 'Anonymous',
+      },
+    },
+    {
+      heading: 'Finally Landed an Offer and Negotiated +$6K',
+      testimonial: `After 12 months of job searching with no success, Izzy's program helped me land an offer with a $6k increase. His motivation and strategies were key to my success.`,
+      name: 'Jorge G.',
+      job: 'Sales Planning Analyst',
+      image: {
+        src: '~/assets/images/jorgephoto.jpeg',
+        alt: 'Jorge Garboza',
+      },
+    },
+    {
+      heading: '2 Offers in 3 Weeks',
+      testimonial: `After a long job search with no results, I joined Izzy’s course and got 2 offers within weeks. His expertise is unmatched and affordable compared to other coaching options.`,
+      name: 'Annie B.',
+      job: 'Marketing Manager',
+      image: {
+        src: '~/assets/images/anniephoto.jpeg',
+        alt: 'Annie Bell',
+      },
+    },
+  ]}
+/>
 
 
   <Prices
@@ -502,76 +622,38 @@ stats={[
 />
 
 
+
+
 <Testimonials
-  title="More Success Stories"
   testimonials={[
-   {
-      heading: 'Named My Imposter Syndrome',
-      subheading: '🏆 Negotiated a $10K Increase',
-      testimonial: `Izzy really helped me as a developer and a professional. He named my imposter syndrome and helped me realize that I have A LOT more skills, talents, and abilities than I give myself credit for.`,
-      name: 'Septembre A.',
-      job: 'Software Engineer',
-      image: {
-        src: '~/assets/images/septembrephoto.jpeg',
-        alt: 'Septembre A.',
-      },
-    },
-   {
-      heading: 'Highly Recommend - 10/10',
-      subheading: '🎉 Increased Her Salary by $30K',
-      testimonial: `I can't stress enough how invaluable Izzy’s insights have been in this journey. Highly recommend - 10/10. He knows his stuff and has a way of getting you to look at things from a different perspective. If you have the chance to work with him, go for it.`,
-      name: 'Tamara G.',
-      job: 'Customer Success Manager',
-      image: {
-        src: '~/assets/images/tamaraphoto.jpeg',
-        alt: 'Tamara G.',
-      },
-    },
     {
-      heading: 'Actionable Ideas & Inspiration',
-      subheading: '💰 Increased His Salary by $20K',
-      testimonial: `You can tell Izzy really wants people to succeed. He listens patiently to your goals and then provides fresh ideas that can make a difference. He's also good at keeping you realistic in a way that makes you believe you can achieve more.`,
-      name: 'Julian P.',
-      job: 'Senior Risk Manager',
+      heading: 'Take the leap',
+      testimonial: `Izzy has always exceeded my expectations in our work together. He will absolutely bring out the best in you. Take the leap - you won't regret it.`,
+      name: 'Mazia S.',
+      job: 'Software Developer',
       image: {
         src: '~/assets/images/chrisphoto.jpeg',
-        alt: 'Julian P.',
+        alt: 'Mazia S.',
       },
     },
     {
-      heading: 'Landed Associate Director + $25K',
-      testimonial: `Izzy's guidance transformed my personal narrative, leading to an internal Associate Director role and a $25k pay increase. His expertise in reframing perspective and boosting confidence was invaluable.`,
-      name: 'Chris C.',
-      job: 'Programs & Business Development',
-      image: {
-        src: '~/assets/images/chrisphoto.jpeg',
-        alt: 'Anonymous',
-      },
-    },
-    {
-      heading: 'Finally Landed an Offer and Negotiated +$6K',
-      testimonial: `After 12 months of job searching with no success, Izzy's program helped me land an offer with a $6k increase. His motivation and strategies were key to my success.`,
-      name: 'Jorge G.',
-      job: 'Sales Planning Analyst',
-      image: {
-        src: '~/assets/images/jorgephoto.jpeg',
-        alt: 'Jorge Garboza',
-      },
-    },
-    {
-      heading: '2 Offers in 3 Weeks',
-      testimonial: `After a long job search with no results, I joined Izzy’s course and got 2 offers within weeks. His expertise is unmatched and affordable compared to other coaching options.`,
+      heading: 'If you\'re on the fence, go for it',
+      testimonial: `If you’re on the fence, go for it. I pondered job search coaching after a LONG job search black hole. I joined Izzy’s course and within weeks got 2 offers.`,
       name: 'Annie B.',
       job: 'Marketing Manager',
       image: {
         src: '~/assets/images/anniephoto.jpeg',
-        alt: 'Annie Bell',
+        alt: 'Annie B.',
       },
     },
+    {
+        heading: 'A real life Wizard',
+        testimonial: `Izzy is no hype. This man is a real life wizard of “work”, and he’s sensitive with a big ole heart. He’s leveraging technology in ways most coaches don’t even know HOW TO use yet.`,
+        name: 'Kay W.',
+        job: 'Product Manager',
+      },
   ]}
 />
-
-
 
 <FAQs
     title="Frequently Asked Questions"
@@ -617,38 +699,6 @@ stats={[
     ]}
 />
 
-
-<Testimonials
-  title="Advice From Our Members"
-  testimonials={[
-    {
-      heading: 'Take the leap',
-      testimonial: `Izzy has always exceeded my expectations in our work together. He will absolutely bring out the best in you. Take the leap - you won't regret it.`,
-      name: 'Mazia S.',
-      job: 'Software Developer',
-      image: {
-        src: '~/assets/images/chrisphoto.jpeg',
-        alt: 'Mazia S.',
-      },
-    },
-    {
-      heading: 'If you\'re on the fence, go for it',
-      testimonial: `If you’re on the fence, go for it. I pondered job search coaching after a LONG job search black hole. I joined Izzy’s course and within weeks got 2 offers.`,
-      name: 'Annie B.',
-      job: 'Marketing Manager',
-      image: {
-        src: '~/assets/images/anniephoto.jpeg',
-        alt: 'Annie B.',
-      },
-    },
-    {
-        heading: 'A real life Wizard',
-        testimonial: `Izzy is no hype. This man is a real life wizard of “work”, and he’s sensitive with a big ole heart. He’s leveraging technology in ways most coaches don’t even know HOW TO use yet.`,
-        name: 'Kay W.',
-        job: 'Product Manager',
-      },
-  ]}
-/>
 
   <!-- CallToAction Widget *********** -->
 
