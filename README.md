@@ -1,297 +1,143 @@
-# 🚀 AstroWind
+# ClearCareer v2 (2024)
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+> The 2024 redesign of the ClearCareer website -- a job search coaching and accountability community that helps professionals land better roles with higher salaries.
 
-🌟 _Most *starred* & *forked* Astro theme in 2022 & 2023_. 🌟
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Astro](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+## Overview
 
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+ClearCareer v2 is the primary marketing website for the ClearCareer job search community, built with Astro 4.8 and deployed on Vercel. It showcases the community's value proposition -- weekly group coaching, AI-powered job search tools, templates and scripts, and peer accountability -- with extensive social proof from alumni who have landed roles with $5K-$30K salary increases. The site includes a full MDX blog with categories, tags, and RSS feed, plus SEO optimization with Open Graph tags and sitemap generation.
 
-<br>
+## Features
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astrowind-1.png" alt="AstroWind Theme Screenshot">
+- **Hero Section** -- "Stop Wasting Time, Start Getting Results" with community join CTA and testimonial image
+- **Stats Bar** -- Key metrics: $10K avg salary gain, $30K top salary gain, 100+ alumni
+- **Success Story Testimonials** -- Multiple sections featuring named alumni with salary outcomes (e.g., "3 Job Offers + a $10K Raise", "From 200+ Applications to a Job in 3 Weeks", "Landed Associate Director + $25K")
+- **Weekly Group Coaching Section** -- Describes live coaching calls with clarity, roadblock removal, and strategy sharing
+- **AI Prompts, Tools & Templates** -- 9 featured tools including: Quantify Your Achievements, Instantly Research Salaries, Discover Industry Events, Improve Your Networking, Email Templates, Target Better Companies, Level-Up Interview Prep, Optimize Your LinkedIn, Counter Objections
+- **Templates, Scripts & Resources** -- 500+ hours of custom AI prompts, resume optimization tools, email templates
+- **Community Support & Accountability** -- Win sharing, feedback, goal setting, weekly priorities
+- **4-Step Success Path** -- Clarify Your Career Path, Target the Right Companies, Master Your Outreach, Land The Job
+- **Why Choose ClearCareer** -- Feel Valued and Confident, Gain Motivation and Clarity, Make Networking Feel Natural, Develop Your Personal Brand
+- **Coach Bio** -- Detailed "Meet Your Coach" section about Izzy, including media features (CBC, Notable Life) and workshop experience (UofT, TMU, Humber College, United Nations Association)
+- **Pricing** -- Monthly membership ($49/mo) and Lifetime membership ($249 one-time) with Circle community platform
+- **FAQ Section** -- Covers results expectations, program length, weekly calls, community platform, cancellation policy
+- **MDX Blog** -- Full blog engine with categories, tags, related posts, and RSS feed
+- **SEO Optimization** -- Open Graph tags, sitemap generation, Google Analytics support, Google Site Verification
 
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+## Tech Stack
 
-<br>
+| Layer | Technology |
+|-------|-----------|
+| Framework | Astro 4.8 |
+| Language | TypeScript |
+| Styling | Tailwind CSS (with dark mode) |
+| Content | MDX blog posts |
+| SEO | Sitemap, RSS, Open Graph |
+| Deployment | Vercel |
 
-<details open>
-<summary>Table of Contents</summary>
+## Getting Started
 
-- [Demo](#demo)
-- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-</details>
+### Installation
 
-<br>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/izzydoesizzy/clearcareerv2-2024.git
+   cd clearcareerv2-2024
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-## Demo
+### Available Scripts
 
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install dependencies |
+| `npm run dev` | Start local dev server |
+| `npm run build` | Build production site to `./dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run format` | Format code with Prettier |
+| `npm run lint:eslint` | Run ESLint |
 
-<br>
-
-## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
-
-We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
-
-[Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
-
-<br>
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
-
-In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
-
-### Project structure
-
-Inside **AstroWind** template, you'll see the following folders and files:
+## Project Structure
 
 ```
-/
-├── public/
-│   ├── _headers
-│   └── robots.txt
-├── src/
-│   ├── assets/
-│   │   ├── favicons/
-│   │   ├── images/
-│   │   └── styles/
-│   │       └── tailwind.css
-│   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── ui/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   ├── Favicons.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
-│   ├── layouts/
-│   │   ├── Layout.astro
-│   │   ├── MarkdownLayout.astro
-│   │   └── PageLayout.astro
-│   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
-│   ├── utils/
-│   ├── config.yaml
-│   └── navigation.js
-├── package.json
-├── astro.config.mjs
-└── ...
+src/
+├── assets/
+│   ├── images/            # Testimonial photos, coach photos, community screenshots
+│   └── styles/
+│       └── tailwind.css
+├── components/
+│   ├── widgets/
+│   │   ├── Hero.astro
+│   │   ├── Hero2.astro
+│   │   ├── Features.astro
+│   │   ├── Features2.astro
+│   │   ├── Steps.astro
+│   │   ├── Content.astro
+│   │   ├── Testimonials.astro
+│   │   ├── Pricing.astro
+│   │   ├── FAQs.astro
+│   │   ├── Stats.astro
+│   │   ├── CallToAction.astro
+│   │   └── About.astro
+│   ├── blog/              # Blog list, post, and category components
+│   ├── common/            # Shared components
+│   └── ui/                # Base UI primitives
+├── content/
+│   ├── post/              # MDX blog posts
+│   └── config.ts          # Content collection config
+├── layouts/
+│   ├── Layout.astro
+│   ├── PageLayout.astro
+│   └── MarkdownLayout.astro
+├── pages/
+│   ├── index.astro        # Main landing page
+│   └── [...blog]/         # Dynamic blog routes (posts, categories, tags)
+├── utils/
+├── config.yaml            # Site config (name, SEO, blog settings, analytics)
+└── navigation.js          # Navigation menu config
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Configuration
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Edit `src/config.yaml` to customize:
+- Site name, URL, and SEO metadata
+- Blog settings (posts per page, permalinks, categories, tags)
+- Google Analytics ID
+- Theme (system / light / dark)
 
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
+## Deployment
 
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
+- **Vercel** (recommended): Connect repo and auto-deploy
+- **Netlify**: Connect repo and auto-deploy
+- **Manual**: `npm run build` then serve the `dist/` directory
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
+## Tags
 
-<br>
+`landing-page` `template` `blog` `job-search-community`
 
-### Commands
+## Created
 
-All commands are run from the root of the project, from a terminal:
+May 2024
 
-| Command               | Action                                             |
-| :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:3000`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
+## Status
 
-<br>
+Functional -- full marketing site with blog, testimonials, pricing, and community signup links.
 
-### Configuration
+## Author
 
-Basic configuration file: `./src/config.yaml`
-
-```yaml
-site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false # Generate permalinks with or without "/" at the end
-
-  googleSiteVerificationId: false # Or some value,
-
-# Default SEO metadata
-metadata:
-  title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
-  robots:
-    index: true
-    follow: true
-  openGraph:
-    site_name: 'Example'
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
-    cardType: summary_large_image
-
-i18n:
-  language: en
-  textDirection: ltr
-
-apps:
-  blog:
-    isEnabled: true # If the blog will be enabled
-    postsPerPage: 6 # Number of posts per page
-
-    post:
-      isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true # If a widget with related posts is to be displayed below each post
-    relatedPostsCount: 4 # Number of related posts to display
-
-analytics:
-  vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
-
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-```
-
-<br>
-
-#### Customize Design
-
-To customize Font families, Colors or more Elements refer to the following files:
-
-- `src/components/CustomStyles.astro`
-- `src/assets/styles/tailwind.css`
-
-### Deploy
-
-#### Deploy to production (manual)
-
-You can create an optimized production build with:
-
-```shell
-npm run build
-```
-
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
-
-#### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
-## Contributing
-
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
-## License
-
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
-
-
+**Izzy Piyale-Sheard** -- [@izzydoesizzy](https://github.com/izzydoesizzy)
